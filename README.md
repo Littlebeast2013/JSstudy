@@ -1,0 +1,2 @@
+# JSpractise
+mojePrvniSuperScripty
