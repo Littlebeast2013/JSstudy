@@ -1,0 +1,141 @@
+body{background:pink;
+font-family: 'Pangolin', cursive;}
+
+
+h1{ text-shadow: 1px 1px 0px rgb(200, 200, 200);}
+
+
+button {height:35px;
+    width:15px;
+background:salmon;
+font-family: 'Pangolin', cursive;
+font-size:20px;
+font-weight:normal;
+text-align:center;}
+
+div {display: flex;
+  flex-direction: column;
+margin:0px;
+height:}	
+
+content {display:flex;
+  
+margin:10px;
+margin-left:30px;
+}
+
+h4{font-size:20px}
+
+.firstpart{margin-left:0px;
+margin-right:5px;}
+.secpart{margin-left:5px;}
+
+.nadpis {font-size:20px;
+font-weight:600}
+
+.link {display:flex;
+align-items:center;
+flex-wrap:wrap;
+font-size:  25px;
+margin-top:30px;}
+links{display:flex;
+flex-direction:column;
+text-align:center;
+}
+
+a{text-decoration:none;
+color:brown;
+padding:4px;}
+
+header{
+  background:#222; 
+  color:pink;
+height:60px;
+width:1100px;
+  line-height: 2;
+    font-family: 'Josefin Sans', sans-serif;
+  font-weight:450px;
+  font-size:30px;
+   border-radius:10px 10px 10px 0px;
+ 
+}
+
+.hed{color:pink;
+margin-left:20px;
+  margin-right:5px;
+  border-right:0px solid white;
+   text-align:center;
+    width:175px;
+  height:50px;
+   text-shadow: 1px 1px 0px rgb(200, 200, 200);
+}
+
+aside {background:#222;
+display:column;
+  height:1300px;
+  width:200px;
+  margin-right:50px;
+   margin-top:-790px;
+   display: flex;
+  flex-direction: column;
+  background:;
+    text-shadow: 1px 1px 0px rgb(200, 200, 200);
+  border-radius:0px 10px 10px;
+}
+
+
+.super {display:flex;
+    flex-direction: row;
+height:;
+width:2000px;
+}
+
+session{display:flex;
+flex-direction:column;
+align-items:center;}
+
+.sid{color:lightblue;
+margin:5px;
+  font-size:30px;
+  border:2px dotted pink;
+  width:175px;
+  height:50px;
+  text-align:center;
+}
+
+session{display:flex;
+  flex-direction:row;}
+
+.ruze{width:10%;
+position:absolute;
+top:150px;
+left:800px;
+border-radius:5px;
+}
+
+content{}
+  
+  .sid a {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.sid: after {
+  background-color: hsla(0,0%,0%,0.1);
+  box-shadow: 0 0.09375em 0.1875em 0.1875em hsla(0,0%,0%,0.1);
+  content: '';
+  height: 0.375em;
+  left: 0.75em;
+  position: absolute;
+  right: 0.75em;
+  top: 100%;
+  z-index: -1;
+}
+  
+#demo, #demo3, #demo4,#demo5,#demo6{display:inline;
+  color:blue;
+    height:100px;
+  margin-top:50px;
+}
+
+#demo2{display:inline;color:red}

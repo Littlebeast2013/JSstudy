@@ -1,0 +1,127 @@
+body{background:pink;
+font-family: 'Pangolin', cursive;}
+
+
+h1{ text-shadow: 1px 1px 0px rgb(200, 200, 200);}
+
+
+button {height:35px;
+    width:100px;
+background:salmon;
+font-family: 'Pangolin', cursive;
+font-size:20px;
+font-weight:normal;
+text-align:center;}
+
+div {display: flex;
+  flex-direction: column;
+margin:0px;
+height:}	
+
+content {display:flex;
+  
+margin:10px;
+margin-left:30px;
+}
+
+h4{font-size:20px}
+
+
+
+.nadpis {font-size:20px;
+font-weight:600}
+
+
+a{text-decoration:none;
+color:brown;
+padding:4px;}
+
+header{
+  background:#222; 
+  color:pink;
+height:60px;
+width:1000px;
+  line-height: 2;
+    font-family: 'Josefin Sans', sans-serif;
+  font-weight:450px;
+  font-size:30px;
+   border-radius:10px 10px 10px 0px;
+ 
+}
+
+.hed{color:pink;
+margin-left:20px;
+  margin-right:5px;
+  border-right:0px solid white;
+   text-align:center;
+    width:175px;
+  height:50px;
+   text-shadow: 1px 1px 0px rgb(200, 200, 200);
+}
+
+aside {background:#222;
+display:column;
+  height:420px;
+  width:200px;
+  margin-right:50px;
+   margin-top:5px;
+   display: flex;
+  flex-direction: column;
+  background:;
+    text-shadow: 1px 1px 0px rgb(200, 200, 200);
+  border-radius:0px 10px 10px;
+}
+
+
+.sid{color:lightblue;
+margin:5px;
+  font-size:30px;
+  border:2px dotted pink;
+  width:175px;
+  height:50px;
+  text-align:center;
+}
+
+session{display:flex;
+  flex-direction:row;}
+
+.ruze{width:10%;
+position:absolute;
+top:150px;
+left:800px;
+border-radius:5px;
+}
+
+.ruze2{width:10%;
+position:absolute;
+top:260px;
+left:800px;
+border-radius:5px;
+}
+
+.ruze3{width:10%;
+position:absolute;
+top:370px;
+left:800px;
+border-radius:5px;
+}
+  
+  .sid a {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.sid: after {
+  background-color: hsla(0,0%,0%,0.1);
+  box-shadow: 0 0.09375em 0.1875em 0.1875em hsla(0,0%,0%,0.1);
+  content: '';
+  height: 0.375em;
+  left: 0.75em;
+  position: absolute;
+  right: 0.75em;
+  top: 100%;
+  z-index: -1;
+}
+.slovo{height:60px;}
+
+#tlacitkoDalsi{width:80px;}
