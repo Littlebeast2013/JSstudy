@@ -1,2 +1,1 @@
-# JSpractise
-mojePrvniSuperScripty
+# Doucuji.eu-Simple-Pick-a-Pair-Game
