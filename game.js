@@ -19,7 +19,8 @@ let examplePlayer = {
 }
 
 // An array of cards that are to be rendered into the page.
-let cards = ["a","b","c"];
+let cards = [];
+let imageList=["https://cdn.pixabay.com/photo/2018/02/09/21/46/rose-3142529_960_720.jpg","https://cdn.pixabay.com/photo/2018/02/09/21/46/rose-3142529_960_720.jpg"];
 
 // An array of players that are playing the game
 let players = [];
@@ -27,36 +28,37 @@ let currentPlayer = 0;
 
 
 // TODO: Create a function to shuffle the card deck
-let listIds=[];
+/*let listIds=[];
 
-function createIds(cards.length)
-{
-  for (let i = 0; i < cards.length*2; i++) {
+
+function createIds() {
+  for (let i = 0; i < imageList.length*2; i++) {
   listIds.push(i);
   return(listIds);
     };
-
-{
-  function shuffle(listIds) {
-    listIds.sort(() => Math.random() - 0.5);
-    return(listIds);
-  }
-
-
 }
+
+
+function shuffle(listIds) {
+  listIds.sort(() => Math.random() - 0.5);
+  return(listIds);
+}
+*/
+
+
 
 // TODO: Take imagelist and create card set based of that
 
-function createCardSet(cards.length) {
+function createCardSet(numberOfPairs) {
   let cardSet = [];
 
   for (let j = 0; j < 2; j++) {   // Ensure PAIRS of cards are created
-      for (let i = 0; i < cards.length; i++) {
-          let idOffset = j == 0 ? 0 : cards.length;
+      for (let i = 0; i < numberOfPairs; i++) {
+          let idOffset = j == 0 ? 0 : numberOfPairs;
           cardSet.push({
-              "id": listIds[i] + idOffset,    // Quiz question: Why is there an ID offset?
+              "id": i + idOffset,    // Quiz question: Why is there an ID offset?
               "type": "image",
-              "content": cards[i],
+              "content": imageList[i],
               "face": "down",
               "collected": false
           });
@@ -125,3 +127,55 @@ function nextTurn() {
         currentPlayer = currentPlayer+1;
     }
 }
+
+
+
+function flipCard(card) {}
+
+
+
+
+function shuffle(karticky) {
+  var currentIndex = karticky.length, temporaryValue, randomIndex;
+
+  while (0 !== currentIndex) {
+
+randomIndex = Math.floor(Math.random() * currentIndex);
+currentIndex -= 1;
+
+temporaryValue = karticky[currentIndex];
+karticky[currentIndex] = karticky[randomIndex];
+karticky[randomIndex] = temporaryValue;
+  }
+
+  return karticky;
+};
+
+ // nastavit zbylé vlastnosti (obsah, obrazek) obdobným způsobem
+  // pro každou kartu v cards
+
+function insertCards(){ 
+let gameboard = document.getElementById("gameboard");
+//gameboard.innerHTML = ""; 
+for (let i = 0; i < cards.length; i++) {
+
+  let karticka = document.createElement("div");
+  karticka.setAttribute("id", cards[i].id);
+  karticka.setAttribute("id", cards[i].type);
+  karticka.setAttribute("content", cards[i].content);
+  karticka.setAttribute("face", cards[i].face);
+  karticka.setAttribute("id", cards[i].collected);
+  gameboard.appendChild(karticka);
+}
+};
+
+function initializeGame() {
+  cards = createCardSet(2);
+  shuffle(cards);
+  insertCards(cards);
+  //cards.forEach(card=>card.addEventListener("click", flipCard));
+  
+};
+
+initializeGame();
+
